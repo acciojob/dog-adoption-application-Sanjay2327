@@ -13,17 +13,19 @@
 		<br>
 		<input type="text" placeholder="Phone Number" id="phone"/>
 		<br>
-		<input type="text" placeholder="address" id="Address"/>
+		<input type="text" placeholder="Address" id="address"/>
 		<br>
-		<input type="checkbox" placeholder="Name" id="checkbox" value="Have you ever lived with a Dog before?"/>Have you ever lived with a Dog before?<br>
-		<label>Please select your preferred breeds</label>
+		<label>
+		  <input type="checkbox" placeholder="Name" id="checkbox" value="Have you ever lived with a Dog before?"/>
+		  Have you ever lived with a Dog before?<br>
+		</label>
+		<label for="multiSelect">Please select your preferred breeds</label>
 		<br>
-		<input type="radio" id="multiSelect" value="poodle" name="Please select your preferred breeds"/>poodle
-		<br>
-		<input type="radio" id="multiSelect" value="goldenRetreiver" name="Please select your preferred breeds"/>goldenRetreiver
-		<br>
-		<input type="radio" id="multiSelect" value="germanSheffered" name="Please select your preferred breeds"/>German Sheffered
-		<br>
+		<select id="multiSelect" multiple>
+			<option value="podle">Podle</option>
+			<option value="goldenRetriever">Golden Retriever</option>
+			<option value="germanShepherd">German Shepherd</option>
+		</select>
 		<input type="submit" id="submit" value="Submit"/>
 		
 	</form>
